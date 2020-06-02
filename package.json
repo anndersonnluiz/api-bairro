@@ -1,0 +1,26 @@
+{
+  "name": "api-bairro",
+  "version": "1.0.0",
+  "description": "API de tradução do bairro",
+  "main": "index.js",
+  "scripts": {
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anndersonnluiz/api-bairro.git"
+  },
+  "keywords": [
+    "and"
+  ],
+  "author": "Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anndersonnluiz/api-bairro/issues"
+  },
+  "homepage": "https://github.com/Anndersonnluiz/api-bairro#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lower-case": "^2.0.1"
+  }
+}
