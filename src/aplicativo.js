@@ -11,6 +11,7 @@ var popularBairroLocal;
 // Inicio
 app.get('/codigoBairro', function (req, res) {
     this.nomeBairroExterno = req.query.nomeBairro;
+    console.log("passei aqui");
     popularBairro(function popularBairro() {
 
     });
