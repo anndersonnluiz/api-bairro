@@ -21,7 +21,7 @@ app.get('/codigoBairro', function (req, res) {
     res.send(this.codigoBairro);
         return this.codigoBairro;
 })
-http.createServer(app).listen(3001, () => console.log("Servidor rodando local na porta 3001"));
+http.createServer(app).listen(3000, () => console.log("Servidor rodando local na porta 3000"));
 
 
 function percorrerLista() {
