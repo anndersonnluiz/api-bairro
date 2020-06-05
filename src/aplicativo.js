@@ -30,20 +30,19 @@ http.createServer(app).listen(3001, () => console.log("Servidor rodando local na
 
 
 function percorrerLista() {
-    var nomeBairro = this.nomeBairroExterno.toLowerCase();
-    for (let index = 0; index < this.popularBairroLocal.length; index++) {
-        var str = this.popularBairroLocal[index].VALUE.toLowerCase();
-        if (str == nomeBairro) {
-            this.codigoBairro = 
-                {
-                    "ID":this.popularBairroLocal[index].ID,
-                    "Bairro":this.popularBairroLocal[index].VALUE
-                },
-            
-            index = this.popularBairroLocal.lenght;
-            return this.codigoBairro;
+    var nomeBairro;
+    this.codigoBairro = [];
+    for (let i = 0; i < this.nomeBairroExterno.length; i++) {
+        nomeBairro = this.nomeBairroExterno[i].toLowerCase();
+        for (let index = 0; index < this.popularBairroLocal.length; index++) {
+            var str = this.popularBairroLocal[index].VALUE.toLowerCase();
+            if (str == nomeBairro) {
+                this.codigoBairro.push(this.popularBairroLocal[index].ID);
+                index = this.popularBairroLocal.lenght;
+            }
         }
     }
+    return this.codigoBairro;
 }
 
 
