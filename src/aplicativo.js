@@ -11,13 +11,18 @@ var popularBairroLocal;
 // Inicio
 app.get('/codigoBairro', function (req, res) {
     this.nomeBairroExterno = req.query.nomeBairro;
-    console.log("passei aqui");
+    
+    //Popular array bairro junto com o código
     popularBairro(function popularBairro() {
 
     });
+
+    //Percorre o array bairro e compara com o nome do bairro passado por parâmetro até o encontrar
     percorrerLista(function percorrerLista() {
         res.send(this.codigoBairro);
     });
+
+    //Retorna Json com nome e código do bairro solicitado
     res.send(this.codigoBairro);
         return this.codigoBairro;
 })
