@@ -39,6 +39,7 @@ function percorrerLista() {
             if (str == nomeBairro) {
                 this.codigoBairro.push(this.popularBairroLocal[index].ID);
                 index = this.popularBairroLocal.lenght;
+                index ++;
             }
         }
     }
